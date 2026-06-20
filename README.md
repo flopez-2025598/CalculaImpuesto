@@ -1,2 +1,11 @@
 # CalculaImpuesto
 Cálculo de IVA, Subtotal y Total con TypeScript
+Cálculo de IVA, Subtotal y Total con TypeScript
+Diseño de las funciones
+Se implementaron tres funciones principales, cada una con una responsabilidad específica. La función calcularSubtotal recibe un arreglo de precios numéricos y devuelve la suma total utilizando el método reduce, que recorre cada elemento del arreglo acumulando los valores. La función calcularIVA recibe el subtotal y una tasa porcentual, aplicando la fórmula subtotal * (tasa / 100) para obtener el impuesto correspondiente. La función calcularTotal recibe el subtotal y el IVA ya calculados, y devuelve su suma como precio final. Todas las funciones utilizan tipado estricto de TypeScript, declarando sus parámetros y valores de retorno como number.
+Organización por módulos
+El proyecto se organizó en archivos separados según el principio de separación de responsabilidades. Cada función fue colocada en su propio módulo dentro de la carpeta src/calculos/: subtotal.ts, iva.ts y total.ts. El archivo principal src/index.ts importa las tres funciones utilizando la sintaxis import { } from de TypeScript y las utiliza tanto para la entrada interactiva del usuario como para las pruebas automáticas. Esta estructura facilita el mantenimiento y la reutilización del código.
+Resultados de las pruebas
+Se realizaron cuatro pruebas en total. Una prueba interactiva donde el usuario ingresó 3 productos con precios Q125.12, Q130.00 y Q85.50, obteniendo un subtotal de Q340.62, IVA de Q40.87 y total de Q381.49. Adicionalmente se ejecutaron tres pruebas automáticas con datos fijos que representan compras de útiles escolares, supermercado y tecnología, obteniendo resultados coherentes y verificables matemáticamente en los tres casos.
+Conclusiones
+El desarrollo de esta actividad permitió comprender la importancia de organizar el código en módulos independientes, donde cada función tiene una única responsabilidad clara. TypeScript demostró ser una herramienta valiosa al detectar errores de tipo durante el desarrollo, como nombres incorrectos de funciones exportadas, antes de ejecutar el programa. La documentación JSDoc facilita entender el propósito de cada función sin necesidad de leer su implementación completa.
