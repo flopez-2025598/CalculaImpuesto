@@ -1,0 +1,21 @@
+{
+  "name": "calculaimpuesto",
+  "version": "1.0.0",
+  "description": "Calculadora de subtotal, IVA y total",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts"
+  },
+  "author": "tu nombre",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "@types/readline-sync": "^1.4.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
